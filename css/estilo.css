@@ -1,0 +1,184 @@
+html{
+    background-color: #f8f6f7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.site-largura{
+    width: 900px;
+    margin: 0 auto;
+}
+
+.container-voos {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+.top-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 900px;
+    padding: .5rem ;
+    background: white;
+    z-index: 9999;
+}
+
+.top-menu-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.top-menu-right,
+.top-menu-left{
+    flex: 1;
+}
+
+.top-menu-right{
+    text-align: right;
+    word-spacing: 1.7em;
+}
+
+.top-menu-left{
+    word-spacing: -1em;
+    font-weight: bold;
+}
+
+.logo-special-text{
+    font-size: 2rem;
+}
+
+.logo-text-red{
+    color:#f35926;
+}
+
+.logo-text-yellow{
+    color: #fcb929;
+}
+
+.logo-text-green{
+    color: #00b049;
+
+}
+
+.overflow-container {
+    position: relative;
+}
+
+h1{
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 28px;
+}
+
+img {
+    width: 100%;
+}
+
+aside {
+    margin-bottom: 2rem;
+}
+
+.box-font-title {
+    font-size: 16px;
+}
+
+.box-font-description {
+    font-size: 26px;
+}
+
+.box {
+    border-radius: 10px;
+    height: 10em;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.8;
+
+    color: white;
+    font-weight: bold;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.cover {
+    position: relative;
+}
+  
+.filter-container {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+    padding: 16px;
+    border-radius: 8px;
+}
+
+
+.rounded-button {
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+    padding: 4px 16px;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+    text-transform: uppercase;
+}
+  
+  .rounded-button:hover {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+  }
+  
+  .rounded-button:focus {
+    outline: none;
+  }
+  
+
+.box-rio {
+    background-image: url(../img/rio.webp);
+}
+
+.box-bonito {
+    background-image: url(../img/bonito.webp);  
+}
+
+.box-sao-paulo {
+    background-image: url(../img/sao-paulo.webp);  
+}
+
+.box-foz {
+    background-image: url(../img/foz.webp);   
+}
+
+.box-maceio {
+    background-image: url(../img/maceio.webp);
+}
+
+.box-salvador {
+    background-image: url(../img/salvador.webp);
+}
+
+.box-fortaleza {
+    background-image: url(../img/fortaleza.webp);
+}
+
+.box-bh {
+    background-image: url(../img/belo-horizonte.webp);
+}
