@@ -99,20 +99,11 @@ aside {
     
 }    
 
-.inputs-container{
-    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    
-    
-}
-.inputs{
-    flex : 1;
-    
-}
 
 
-h1{
+
+
+.title{
     text-transform: uppercase;
     font-weight: bold;
 }
