@@ -80,9 +80,9 @@ aside {
     background: #ea3d35;
     font-weight: bold;
     text-transform: uppercase;
-    border-radius: 10px;
-    padding:8px;
-}    
+    border-radius: 5px;
+    
+}       
 
 .filter-container {
     position: absolute;
@@ -91,7 +91,7 @@ aside {
     transform: translate(-50%, -50%);
 
     background-color: white;
-    padding: 16px;
+    padding: 20px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -99,8 +99,19 @@ aside {
     
 }    
 
+.inputs-container{
+    display: flex;
+    gap: 6px;
+    flex-basis: 32px;
+}
 
-
+.input,
+.btn{
+    flex: 1;
+}
+.btn{
+    font-size: 15px;
+}
 
 
 .title{
@@ -165,7 +176,7 @@ aside {
     border-radius: 50px;
     background-color: white;
     color: black;
-    padding: 4px 16px;
+    padding: 6px 38px;
     border: none;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
