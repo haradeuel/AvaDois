@@ -4,25 +4,26 @@ html{
 }
 
 .site-largura{
-    width: 900px;
+    border: 10px rgb(0, 60, 255) solid;
+    width: 1000px;
     margin: 0 auto;
 }
 
-
-
 .top-menu {
-    position: fixed;
+    border: 10px red solid;
+    position: sticky;
     top: 0;
     left: 0;
-    width: 100%;
-    min-width: 900px;
-    padding: .5rem ;
+    right: 0;
+    padding: .5rem;
     background: white;
-    z-index: 9999;
+    z-index: 1;
 }   
 
+
+
 .top-menu-flex{
-    display: flex;
+     display: flex;
     justify-content: center;
     align-items: center;
     
@@ -31,9 +32,11 @@ html{
 .top-menu-right,
 .top-menu-left{
     flex: 1;
+    
 }
 
 .top-menu-right{
+    
     text-align: right;
     word-spacing: 1.7em;
 }
@@ -60,44 +63,26 @@ html{
 
 }
 
-.overflow-container {
-    position: relative;
-}
 
-img {
-    width: 100%;
-}
 
-aside {
+header{
     margin-bottom: 2rem;
-}
-
-
-
-
-.btn{
-    color:white;
-    background: #ea3d35;
-    font-weight: bold;
-    text-transform: uppercase;
-    border-radius: 5px;
+    padding: 10rem 0;
+    background: 50% 50%/cover url(../img/barcos.webp);
     
-}       
+}
 
 .filter-container {
-    position: absolute;
-    top: 48%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
     background-color: white;
-    padding: 20px;
+    padding: 15px;
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
 }    
+
+    
+
 
 .inputs-container{
     display: flex;
@@ -105,12 +90,19 @@ aside {
     flex-basis: 32px;
 }
 
+.btn{
+    color:white;
+    background: #ea3d35;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 15px;
+    
+}   
+
 .input,
 .btn{
     flex: 1;
-}
-.btn{
-    font-size: 15px;
 }
 
 
@@ -119,7 +111,14 @@ aside {
     font-weight: bold;
 }
 
-.center-flex{
+.container-voos {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.middle-grid{
+    border: 100px rgb(255, 251, 0);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -131,7 +130,7 @@ aside {
 
 .box-font-title {
     font-size: 16px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgb(5, 5, 5);
 }
 
 .box-font-description {
@@ -140,6 +139,7 @@ aside {
 
 .box {
     border-radius: 10px;
+    width: 14em;
     height: 12em;
     background-position: center;
     background-size: cover;
@@ -157,18 +157,10 @@ aside {
     gap: 12px;
 }
 
-.cover {
-    position: relative;
-}
- 
 
 
 
-.container-voos {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-}
+
 
 
 
