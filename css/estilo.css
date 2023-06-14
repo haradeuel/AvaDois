@@ -4,13 +4,12 @@ html{
 }
 
 .site-largura{
-    border: 10px rgb(0, 60, 255) solid;
-    width: 1000px;
+    order: 10px rgb(0, 60, 255) solid;
+    min-width: 1000px;
     margin: 0 auto;
 }
 
 .top-menu {
-    border: 10px red solid;
     position: sticky;
     top: 0;
     left: 0;
@@ -23,7 +22,8 @@ html{
 
 
 .top-menu-flex{
-     display: flex;
+    max-width: 100rem;
+    display: flex;
     justify-content: center;
     align-items: center;
     
@@ -73,6 +73,7 @@ header{
 }
 
 .filter-container {
+    max-width: 100rem;
     background-color: white;
     padding: 15px;
     border-radius: 8px;
@@ -96,6 +97,7 @@ header{
     font-weight: bold;
     text-transform: uppercase;
     border-radius: 5px;
+    border:none;
     font-size: 15px;
     
 }   
@@ -112,17 +114,23 @@ header{
 }
 
 .container-voos {
+    max-width: 100rem;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 14px;
+    
+    
 }
 
 .middle-grid{
-    border: 100px rgb(255, 251, 0);
+    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr);
     gap: 28px;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -130,7 +138,7 @@ header{
 
 .box-font-title {
     font-size: 16px;
-    text-shadow: 2px 2px 4px rgb(5, 5, 5);
+    text-shadow: 2px 2px 4px rgb(102, 99, 99);
 }
 
 .box-font-description {
@@ -155,14 +163,9 @@ header{
     justify-content: center;
     text-align: center;
     gap: 12px;
+
+    
 }
-
-
-
-
-
-
-
 
 .rounded-button {
     border-radius: 50px;
